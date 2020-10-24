@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener{
          
      case "Nice":
        if(!$sender->hasPermision("Nice.cmd")){
-         $sender->sendMessage(TF::RED . "Du hast keine Rechte diesen Command zu Benutzen");
+       $sender->sendMessage(TF::RED . "Du hast keine Rechte diesen Command zu Benutzen");
        } else {
        $sender->sendMessage(TF::GREEN . "Du willst fly aber bekommst es nicht, Dafur bist du nun im Gamemode 1");
        $sender->setGamemode(1);
