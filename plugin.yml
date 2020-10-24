@@ -1,0 +1,11 @@
+name: Gamemode
+api: 3.0.0
+version: 1.0.0
+main: Nice\Main
+author: CrowBaldeYT
+commands:
+ Nice:
+  description: §a§lFuture§fCraft§7»»§b Nice
+  permission: Nice.cmd
+  usage: "/Nice"
+  aliases: ["gm1"]
