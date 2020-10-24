@@ -2,7 +2,7 @@
 
 namespace Nice;
 
-use pocketmine\plugin\PluginBase as Plugin;
+use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -10,11 +10,8 @@ use pocketmine\Server;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 
-class Main extends Plugin implements Listener{
+class Main extends PluginBase implements Listener{
 
- public function onEnable(){
-   $this->getServer()->getLogger()->info(TF::GREEN . "Plugin Aktiviert");
- }
  public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) :bool{
 
      switch($cmd->getName()){
